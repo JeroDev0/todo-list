@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h1 class="text-center mb-4">Gestor de Tareas</h1>
+                        
+                        <!-- Formulario para agregar tareas -->
+                        <div class="input-group mb-4">
+                            <input type="text" id="task-name" class="form-control" placeholder="Escribe una tarea...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" id="add-task-btn">Agregar</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Listado de tareas -->
+                        <ul class="list-group mb-4" id="task-list"></ul>
+
+                        <!-- Botón para descargar CSV  -->
+                        <div class="text-center">
+                            <a href="backend/export.php" class="btn btn-success">Descargar informe CSV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
